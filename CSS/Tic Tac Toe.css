@@ -1,0 +1,52 @@
+
+:root {
+    --grid-size: 450px;
+    --margin-size: 5px;
+    
+  }
+  
+  body {
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+   
+    background-color:lightblue;
+    
+  }
+  
+  #grid {
+    align-content: space-between;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: var(--grid-size);
+    width: var(--grid-size);
+  }
+  
+  #grid div {
+    background-color: lightblue;
+    height: var(--square-size);
+    width: var(--square-size);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #grid div img {
+    width: 100%;
+  }
+  
+ .nav-bar{
+  
+   background-color: white;
+  
+ }
+ .nav-bar .btn-info{
+ margin: 30px;
+   color: black;
+   background-color: white;
+   border-color: black;
+   box-shadow: 2px 5px  lightblue;
+ }

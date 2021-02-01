@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
+    <link rel="stylesheet"  href="CSS\Tic Tac Toe.css"/>
+   
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body>
+    <div class="nav-bar  flex-container">
+     <div class="row">
+        <!-- size-selection button -->
+    <select id="size-selection"  class="btn btn-info dropdown-toggle">
+      <option selected> Choose Game size</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+    <!-- Restart game button -->
+    <button class="btn btn-info " id="NewGame"> Restart game</button>
+     <!-- X color-selection button -->
+    <select id="Xcolor"  class="btn btn-info dropdown-toggle">
+      <option selected> Choose X color</option>
+      <option value='img/x.png'>black</option>
+      <option value='img/blue-x-png-1.png'>blue</option>
+      <option value='img/redX.png'>red</option>
+      <option value='img/greenX.png'>green</option>
+    </select>
+     <!-- O color-selection button -->
+    <select id="Ocolor"  class="btn btn-info dropdown-toggle">
+      <option selected> Choose O color</option>
+      <option value='img/circle.png'>black</option>
+      <option value='img/blueO.png'>blue</option>
+      <option value='img/redO.png'>red</option>
+      <option value='img/greenO.png'>green</option>
+    </select>
+    <!-- backgroung-selection button -->
+    <div class="btn-group">
+      <button class="btn btn-info btn-sm"type="button">
+        Background color
+      </button>
+      <button type="button" class="btn btn-sm btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+       <button style="background-color: lightblue;color: #FFFFFF;"type="button" onclick="changeBodyBg('lightblue')">seashell</button> <br>
+       <button class="btn btn-info btn-sm"style="background-color: pink;" type="button" onclick="changeBodyBg('pink');">pink</button><br>
+       <button class="btn btn-info btn-sm" style="background-color: teal;"type="button" onclick="changeBodyBg('teal');">teal</button>    
+      </div>
+     </div>
+  </div> </div>
+  
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-3"></div>
+             <div class="col-md-6">
+                <!-- title -->
+    <h1 class="text-center">Tic-Tac-Toe</h1>
+     <!-- grid -->
+  	<div id="grid">
+    </div>
+     <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title ">Tic-Tac-Toe </h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+           
+          </div>
+          <div class="modal-body">
+            <p class="text-center" id="modal-massage">Congratulations you win. 
+               </p>
+               <img  id="result-img" src="img/congratulations.png" style="width: 150px; height: 150px;"/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="results" class="text-center">
+     
+  
+    </div></div>
+    <div class="col-md-3"></div></div></div>
+
+    
+  </body>
+  <script src="JS\Tic-Tac-Toe.js" ></script>
+</html>
